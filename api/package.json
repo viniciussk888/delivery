@@ -14,7 +14,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "start": "node dist"
   },
   "dependencies": {
     "@types/multer": "^1.4.7",
