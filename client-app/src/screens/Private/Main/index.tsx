@@ -89,10 +89,7 @@ const Main = () => {
   return (
     <>
       <Container>
-        <Header
-          selectedTable={selectedTable}
-          onCancelOrder={handleResetOrder}
-        />
+        <Header />
 
         {isLoading && (
           <CenteredContainer>

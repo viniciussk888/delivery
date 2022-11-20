@@ -1,45 +1,28 @@
-import { TouchableOpacity } from 'react-native'
-import { Text } from '../Text'
-import { Container, Content, OrderHeader, Table } from './styles'
+import { TouchableOpacity, TouchableOpacityBase, View } from "react-native";
+import { Text } from "../Text";
+import { Container, ProfileImage, ContainerUser } from "./styles";
+import { Feather } from "@expo/vector-icons";
 
-interface HeaderProps {
-  selectedTable: string
-  onCancelOrder: () => void
-}
+const mockProfileImage =
+  "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
 
-export function Header({ selectedTable, onCancelOrder }: HeaderProps) {
+export function Header() {
   return (
     <Container>
-      {/* se não tiver uma mesa */}
-      {!selectedTable && (
-        <>
+      <ContainerUser>
+        <ProfileImage resizeMode="contain" source={{ uri: mockProfileImage }} />
+        <View>
           <Text size={14} opacity={0.9}>
-            Bem vindo(a) ao
+            Bem vindo(a)
           </Text>
-          <Text size={24} weight="700">
-            WAITER
-            <Text size={24}>APP</Text>
+          <Text size={18} weight="700">
+            ALBERTO ROCHA
           </Text>
-        </>
-      )}
-
-      {selectedTable && (
-        <Content>
-          <OrderHeader>
-            <Text size={24} weight="600">
-              Pedido
-            </Text>
-            <TouchableOpacity onPress={onCancelOrder}>
-              <Text color="#d73035" weight="600" size={14}>
-                cancelar pedido
-              </Text>
-            </TouchableOpacity>
-          </OrderHeader>
-          <Table>
-            <Text color="#666">Mesa {selectedTable}</Text>
-          </Table>
-        </Content>
-      )}
+        </View>
+      </ContainerUser>
+      <TouchableOpacity>
+        <Feather name="settings" size={24} color="black" />
+      </TouchableOpacity>
     </Container>
-  )
+  );
 }
