@@ -1,0 +1,42 @@
+export const companiesMock = [
+  {
+    _id: "637458030f4d8eff34dc8261",
+    name: "Hamburger do Zé",
+    description: "Deliciosa pizza quatro queijos com borda simples",
+    imagePath: "https://picsum.photos/200/300",
+    type: "product",
+    isOpen: true,
+  },
+  {
+    _id: "637458030f4d8eff34dc8201",
+    name: "Pizzaria do Zé",
+    description: "Deliciosa pizza quatro queijos com borda simples",
+    imagePath: "https://picsum.photos/200/300",
+    type: "product",
+    isOpen: true,
+  },
+  {
+    _id: "63745803054d8eff34dc8261",
+    name: "Salão de Beleza do Zé",
+    description: "Deliciosa pizza quatro queijos com borda simples",
+    imagePath: "https://picsum.photos/200/300",
+    type: "service",
+    isOpen: true,
+  },
+  {
+    _id: "637458030f4d8eff89hfg6565c8201",
+    name: "Pizzaria do Zé",
+    description: "Deliciosa pizza quatro queijos com borda simples",
+    imagePath: "https://picsum.photos/200/300",
+    type: "product",
+    isOpen: true,
+  },
+  {
+    _id: "63745803053436hfgff34dc8261",
+    name: "Salão de Beleza do Zé",
+    description: "Deliciosa pizza quatro queijos com borda simples",
+    imagePath: "https://picsum.photos/200/300",
+    type: "service",
+    isOpen: false,
+  },
+];

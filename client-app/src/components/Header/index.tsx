@@ -4,7 +4,7 @@ import { Container, ProfileImage, ContainerUser } from "./styles";
 import { Feather } from "@expo/vector-icons";
 
 const mockProfileImage =
-  "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png";
+  "https://img.freepik.com/fotos-gratis/retrato-de-homem-branco-isolado_53876-40306.jpg";
 
 export function Header() {
   return (

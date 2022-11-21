@@ -1,31 +1,31 @@
-import { FlatList } from 'react-native'
+import { FlatList } from "react-native";
 
-import { Text } from '../Text'
-import { formatCurrency } from '../../utils/formatCurrency'
-import { PlusCircle } from '../Icons/PlusCircle'
+import { Text } from "../Text";
+import { formatCurrency } from "../../utils/formatCurrency";
+import { PlusCircle } from "../Icons/PlusCircle";
 import {
   ProductContainer,
   ProductImage,
   ProductDetails,
   Separator,
   AddToCartButton,
-} from './styles'
-import { ProductModal } from '../ProductModal'
-import { useState } from 'react'
-import { Product } from '../../types/Product'
+} from "./styles";
+import { ProductModal } from "../ProductModal";
+import { useState } from "react";
+import { Product } from "../../types/Product";
 
 interface MenuProps {
-  onAddToCart: (product: Product) => void
-  products: Product[]
+  onAddToCart: (product: Product) => void;
+  products: Product[];
 }
 
 export function Menu({ onAddToCart, products }: MenuProps) {
-  const [isModalVisible, setIsModalVisible] = useState(false)
-  const [selectedProduct, setSelectedProduct] = useState<null | Product>(null)
+  const [isModalVisible, setIsModalVisible] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState<null | Product>(null);
 
   function handleOpenModal(product: Product) {
-    setIsModalVisible(true)
-    setSelectedProduct(product)
+    setIsModalVisible(true);
+    setSelectedProduct(product);
   }
 
   return (
@@ -67,5 +67,5 @@ export function Menu({ onAddToCart, products }: MenuProps) {
         )}
       />
     </>
-  )
+  );
 }

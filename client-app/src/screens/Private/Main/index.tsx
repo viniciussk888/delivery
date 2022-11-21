@@ -101,7 +101,7 @@ const Main = () => {
         {!isLoading && (
           <>
             <CategoriesContainer>
-              <Categories />
+              <Categories isHome={false} />
             </CategoriesContainer>
 
             {products.length > 0 ? (

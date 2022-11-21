@@ -14,7 +14,7 @@ const defaultOptions = { headerShown: false };
 export const PrivateRoutes = (): JSX.Element => {
   return (
     <Private.Navigator
-      initialRouteName={Routes.MAIN}
+      initialRouteName={Routes.HOME}
       screenOptions={defaultOptions}
     >
       <Private.Screen name={Routes.TAB_ROUTES} component={TabRoutes} />
